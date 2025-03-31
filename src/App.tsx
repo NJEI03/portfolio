@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, User, GraduationCap, Send, ChevronLeft, ChevronRight, Quote, Facebook } from 'lucide-react'
 import { supabase } from './lib/supabase'
-import profileImage from '../dist/assets/profile-B2k7Z9QB.jpg'
+import profileImage from './assets/profile-B2k7Z9QB-B2k7Z9QB.jpg'
 import './App.css'
 function App() {
   const [formData, setFormData] = useState({
