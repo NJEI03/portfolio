@@ -1,0 +1,44 @@
+Codebase Overview for Portfolio Project
+========================================
+
+1. **Project Structure**
+   - `src/`: Contains all the source code for the application.
+     - `App.tsx`: The main React component that serves as the entry point for the app.
+     - `assets/`: Contains static assets like images (e.g., profile picture).
+     - `lib/`: Contains utility files, such as the Supabase configuration.
+     - `App.css`: Contains global styles for the application.
+   - `public/`: Contains static files that are directly served (e.g., favicon, index.html).
+   - `dist/`: The build output folder generated after running `npm run build`.
+
+2. **Key Features**
+   - **React Components**: The app is built using React functional components.
+   - **State Management**: Uses React's `useState` and `useEffect` hooks for managing state and side effects.
+   - **Supabase Integration**: Connects to Supabase for backend services like database and authentication.
+   - **Responsive Design**: The app is styled to work on various screen sizes.
+
+3. **How It Works**
+   - The `App.tsx` file initializes the app and manages the state for the contact form and testimonials.
+   - Static assets like the profile image are imported and displayed dynamically.
+   - The contact form collects user input and sends it to the backend (via Supabase).
+   - Testimonials are displayed in a carousel format, with navigation buttons to switch between them.
+
+4. **How to Run the Project**
+   - Install dependencies: `npm install`
+   - Start the development server: `npm run dev`
+   - Build for production: `npm run build`
+
+5. **Environment Variables**
+   - The app uses environment variables for Supabase configuration:
+     - `VITE_SUPABASE_URL`
+     - `VITE_SUPABASE_ANON_KEY`
+   - These should be set in a `.env` file for local development and in Netlify for deployment.
+
+6. **Deployment**
+   - The app is deployed on Netlify. The `dist/` folder is used as the publish directory.
+
+7. **Future Improvements**
+   - Add animations for smoother transitions.
+   - Optimize images for faster loading.
+   - Implement dark mode for better user experience.
+
+========================================
